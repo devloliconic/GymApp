@@ -1,0 +1,77 @@
+.header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: max-content 450px min-content;
+  justify-content: space-between;
+
+  background-color: var(--air-blue);
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Pixelify Sans", sans-serif;
+  color: var(--black);
+}
+
+.menu {
+  background: var(--air-blue);
+  border-inline-end: none !important;
+  border-bottom: none;
+
+  font-size: 18px;
+
+  width: 100%;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+
+  transition: 0.2s all linear;
+
+  &:hover svg {
+    fill: var(--white);
+  }
+
+  svg {
+    width: 45px;
+    height: 45px;
+    transition: 0.2s all linear;
+  }
+}
+
+.logoLink {
+  text-decoration: none;
+}
+
+.exitButton {
+  background: transparent;
+  border: 1px solid var(--black);
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s all linear;
+
+  & > svg {
+    width: 30px;
+    height: 30px;
+    transition: 0.2s all linear;
+  }
+
+  &:hover {
+    border: 1px solid var(--white);
+  }
+
+  &:hover > svg {
+    fill: white;
+    color: white;
+  }
+}

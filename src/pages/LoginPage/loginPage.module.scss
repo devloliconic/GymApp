@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  background-color: var(--chamoisse);
+}
+
+.loginForm {
+  background-color: var(--rust);
+  border-radius: 20px;
+
+  & > input:not(:last-child),
+  span:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  & > button {
+    width: 100%;
+  }
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Pixelify Sans", sans-serif;
+  color: var(--white);
+
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--white);
+}
+
+.errorList {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+
+  & > li {
+    margin: 0;
+    color: var(--white);
+  }
+}

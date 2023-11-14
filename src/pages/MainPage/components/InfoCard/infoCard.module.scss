@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 52px;
+  text-align: center;
+}
+
+.shadowLogo {
+  font-size: 24px;
+  position: absolute;
+  text-align: center;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0.3;
+
+  z-index: 0;
+  user-select: none;
+}
+
+.description {
+  color: var(--black);
+  font-size: 18px;
+
+  margin: 0 0 10px 0;
+
+  font-weight: 500;
+  text-align: center;
+}
+
+.infoBox {
+}

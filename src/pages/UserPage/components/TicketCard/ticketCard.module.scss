@@ -1,0 +1,13 @@
+.card {
+  padding: 10px 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  min-width: 300px;
+  min-height: 200px;
+
+  background: rgb(112, 196, 115);
+  background: linear-gradient(
+    90deg,
+    rgba(112, 196, 115, 1) 0%,
+    rgba(190, 212, 57, 1) 22%
+  );
+}

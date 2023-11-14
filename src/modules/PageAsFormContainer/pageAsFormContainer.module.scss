@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  background-color: var(--chamoisse);
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Pixelify Sans", sans-serif;
+  color: var(--white);
+
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--white);
+}
+
+.loginForm {
+  width: 450px;
+  padding: 20px;
+
+  background-color: var(--rust);
+  border-radius: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--white);
+
+  transition: 0.2s all linear;
+  &:hover {
+    color: var(--air-blue);
+  }
+}

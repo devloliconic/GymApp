@@ -1,0 +1,7 @@
+{
+  "emailmustbeavalidemail": "Неправильный email",
+  "passwordisarequiredfield": "Поле пароль обязательное",
+  "emailisarequiredfield": "Поле email обязательное",
+  "confirmPasswordisarequiredfield": "Поле подтверждение пороля обязательное",
+  "passwordDontMatch": "Пароли не совпадают"
+}

@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  gap: 15px;
+
+  height: 100%;
+}
+
+.logo {
+  margin: 0;
+
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.description {
+  margin: 0;
+  font-size: 24px;
+}

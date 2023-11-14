@@ -1,0 +1,23 @@
+.ticketsCard {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 20px;
+}
+
+.showMoreContainer {
+  background-color: var(--air-blue);
+
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  min-height: 200px;
+  justify-content: center;
+}
+
+.sectionContainer {
+  margin-bottom: 34px;
+}
+
+.ticketSectionTitle {
+  margin: 0 0 24px 0;
+}

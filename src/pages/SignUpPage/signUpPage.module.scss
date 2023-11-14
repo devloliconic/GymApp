@@ -1,0 +1,24 @@
+.loginForm {
+  background-color: var(--rust);
+  border-radius: 20px;
+
+  & > input:not(:last-child),
+  span:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  & > button {
+    width: 100%;
+  }
+}
+
+.errorList {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+
+  & > li {
+    margin: 0;
+    color: var(--white);
+  }
+}
