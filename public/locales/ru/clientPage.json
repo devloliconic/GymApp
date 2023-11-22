@@ -3,5 +3,8 @@
   "gender": "Пол",
   "birthDate": "Дата рождения",
   "editInformation": "Редактировать",
-  "tickets": "Абонементы"
+  "tickets": "Абонементы",
+  "workoutDate": "Дата тренировки",
+  "gym": "Зал",
+  "workouts": "Тренировки"
 }

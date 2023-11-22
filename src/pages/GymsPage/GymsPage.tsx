@@ -32,19 +32,17 @@ const GymsPage = () => {
   return (
     <Layout>
       <div className={styles.container}>
-        <div className={styles.container}>
-          {gymsData?.map((it) => (
-            <GymCard
-              key={it.gym_id}
-              address={it.address.address}
-              name={it.name}
-              email={it.contact.email}
-              сapacity={it.сapacity}
-              phoneNumber={it.contact.phoneNumber}
-              navigationLink={getNavigationLink(it.gym_id)}
-            />
-          ))}
-        </div>
+        {gymsData?.map((it) => (
+          <GymCard
+            key={it.gym_id}
+            address={it.address.address}
+            name={it.name}
+            email={it.contact.email}
+            сapacity={it.сapacity}
+            phoneNumber={it.contact.phoneNumber}
+            navigationLink={getNavigationLink(it.gym_id)}
+          />
+        ))}
       </div>
     </Layout>
   );

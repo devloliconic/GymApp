@@ -13,3 +13,8 @@ export type Gym = {
   equipment: Equipment[];
   others: Others[];
 };
+
+export type SimpleGym = Omit<
+  Gym,
+  "address" | "contact" | "equipment" | "others"
+>;

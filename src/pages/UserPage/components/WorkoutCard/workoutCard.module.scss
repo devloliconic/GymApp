@@ -1,0 +1,38 @@
+.card {
+  background: #ffffff;
+  border: 0 solid #e2e8f0;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  line-height: 24px;
+  padding: 24px;
+  text-decoration: none;
+  width: auto;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.titleText {
+  margin: 0;
+  font-size: 20px;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.descriptionText {
+  margin: 0;
+  font-size: 18px;
+  color: var(--black);
+}
+
+.valueText {
+  margin: 0;
+  font-size: 18px;
+  color: var(--gray-1);
+}
