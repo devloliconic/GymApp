@@ -1,4 +1,4 @@
-import { Card, Space, Spin } from "antd";
+import { Spin } from "antd";
 import { useTranslation } from "react-i18next";
 
 import { useGyms } from "@/api/queries/gyms";

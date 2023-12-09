@@ -70,7 +70,7 @@ const UserPage = () => {
                 userData?.tickets?.length > 0 &&
                 userData.tickets.map((it) => <TicketCard name={it.type} />)}
             </div>
-            <div>
+            <div className={styles.workoutContainer}>
               <h3 className={styles.ticketTitle}>{t("workouts")}:</h3>
               {workoutData?.length &&
                 workoutData?.length > 0 &&
@@ -78,7 +78,6 @@ const UserPage = () => {
                   <WorkoutCard
                     coach={it.coach}
                     gym={it.gym}
-                    client={it.user}
                     date={getConverterdDateToString(it.date)}
                   />
                 ))}

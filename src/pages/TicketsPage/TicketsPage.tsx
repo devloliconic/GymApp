@@ -33,7 +33,7 @@ const TicketsPage = () => {
           />
         )}
         <TicketsSection
-          isLogin={!!userData}
+          userId={userData?.user_id}
           name={t("allTickets")}
           tickets={ticketsData || []}
           canByTickets

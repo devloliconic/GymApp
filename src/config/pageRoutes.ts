@@ -5,5 +5,6 @@ export enum pageRoutes {
   account = "/account",
   tickets = "/tickets",
   coaches = "/coaches",
-  addresses = "/addresses"
+  addresses = "/addresses",
+  gym = "/gym/:id"
 }

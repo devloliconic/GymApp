@@ -27,3 +27,9 @@
   margin: 0;
   margin-bottom: 15px;
 }
+
+.workoutContainer {
+  & > :not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

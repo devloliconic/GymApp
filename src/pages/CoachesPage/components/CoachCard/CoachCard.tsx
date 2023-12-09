@@ -8,8 +8,9 @@ interface Props {
   lastName: string;
   middleName: string;
   coast: number;
-  navigationLink: string;
+  onGetWorkoutClick: (id: number) => void;
   gym: string;
+  id: number;
 }
 
 export const CoachCard = ({
@@ -17,8 +18,9 @@ export const CoachCard = ({
   lastName,
   middleName,
   coast,
-  navigationLink,
-  gym
+  onGetWorkoutClick,
+  gym,
+  id
 }: Props) => {
   const { t } = useTranslation("coachesPage");
   const cardTitle = [firstName, lastName, middleName].filter(Boolean).join(" ");
@@ -39,9 +41,7 @@ export const CoachCard = ({
           <p>{gym}</p>
         </Space>
       </div>
-      <Button onClick={() => navigate(navigationLink)}>
-        {t("getALeason")}
-      </Button>
+      <Button onClick={() => onGetWorkoutClick(id)}>{t("getALeason")}</Button>
     </Card>
   );
 };

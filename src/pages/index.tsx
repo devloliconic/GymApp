@@ -4,6 +4,7 @@ import { useGetMe } from "@/api/queries/me";
 import { pageRoutes } from "@/config/pageRoutes";
 
 import { CoachesPage } from "./CoachesPage";
+import { GymPage } from "./GymPage";
 import { GymsPage } from "./GymsPage";
 import { LoginPage } from "./LoginPage";
 import { MainPage } from "./MainPage";
@@ -21,6 +22,7 @@ const Authorized = () => {
       <Route path={pageRoutes.coaches} element={<CoachesPage />} />
       <Route path={pageRoutes.tickets} element={<TicketsPage />} />
       <Route path={pageRoutes.addresses} element={<GymsPage />} />
+      <Route path={pageRoutes.gym} element={<GymPage />} />
       <Route path="*" element={<Navigate to={pageRoutes.main} />} />
     </Routes>
   );

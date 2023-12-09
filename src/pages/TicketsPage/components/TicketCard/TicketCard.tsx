@@ -1,24 +1,23 @@
 import { Button, Space } from "antd";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 
 import styles from "./ticketCard.module.scss";
 
 interface Props {
-  navigationLink?: string;
   name: string;
+  titcketId: number;
+  onButtonClick?: (id: number) => void;
 }
 
-export const TicketCard = ({ navigationLink, name }: Props) => {
+export const TicketCard = ({ onButtonClick, name, titcketId }: Props) => {
   const { t } = useTranslation("ticketsPage");
 
-  const navigation = useNavigate();
   return (
     <div className={styles.card}>
       <Space direction="vertical">
         <p>{name}</p>
-        {navigationLink && (
-          <Button onClick={() => navigation(navigationLink)}>{t("buy")}</Button>
+        {onButtonClick && (
+          <Button onClick={() => onButtonClick(titcketId)}>{t("buy")}</Button>
         )}
       </Space>
     </div>
