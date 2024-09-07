@@ -1,8 +1,7 @@
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar, Button, Card, Space } from "antd";
-import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 interface Props {
   firstName: string;
   lastName: string;
